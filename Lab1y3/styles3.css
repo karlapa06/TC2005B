@@ -1,0 +1,15 @@
+h1{
+    color: blueviolet;
+    text-align: center;
+}
+
+p{
+    border: 10px black; 
+    margin: 20px;
+    padding: 50px;
+}
+
+ol{
+    color: violet;
+}
+
