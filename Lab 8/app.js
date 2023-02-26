@@ -1,6 +1,6 @@
-
-const filesystems = required ('fs'); //para acceder y más a los archivos
-filesystems.writeFileSync('hola.txt','Hola desde node');
+console.log("hola desde node");
+const filesystem = require ('fs'); //para acceder y más a los archivos
+filesystem.writeFileSync('hola.txt','Hola');
 
 // Una función que reciba un arreglo de números y devuelva su promedio.
 function average(){
