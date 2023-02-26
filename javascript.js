@@ -1,6 +1,6 @@
 //variables, constantes, consola (log, into, warn, error, asssert)
 
-// var desayunoo = "hot cakes";  ** se usa para declarar variables 
+// var desayunoo = "hot cagtkes";  ** se usa para declarar variables 
 //let comida = 120;  ** se usa para declarar variables
 // se usa cons para que el cliente no pueda modificar una variable 
 // console.log ("") registro en la consola 
