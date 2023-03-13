@@ -1,0 +1,30 @@
+<%- include('includes/head.ejs') %>
+
+<h1 class="title">Registrar crepa</h1>
+
+<br><br>
+
+<form action="/crepas/nuevo" method="POST">
+
+    <label for="nombre">Nombre:</label>
+    <input required name="nombre" id="nombre" class="input is-rounded" type="text" placeholder="Nutella">
+
+    <label for="descripcion">Descripcion:</label>
+    <input name="descripcion" id="descripcion" class="input is-rounded" type="text" placeholder="Deliciosa crepa">
+
+    <label for="handle">Handle:</label>
+    <input name="handle" id="handle" class="input is-rounded" type="text" placeholder="@crepas">
+
+    <label for="ingredientes">Ingredientes:</label>
+    <input name="ingredientes" id="ingredientes" class="input is-rounded" type="text" placeholder="Mantequilla, harina, huevo y leche, Nutella">
+
+    <label for="precio">Precio:</label>
+    <input name="precio" id="precio" class="input is-rounded" type="number" value="75">
+
+    <br><br>
+
+    <input class="button is-info is-rounded" type="submit" value="Registrar">
+
+</form>
+
+<%- include('includes/foot.ejs') %>
