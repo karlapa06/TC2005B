@@ -1,0 +1,30 @@
+{
+  "name": "tc2005b",
+  "version": "1.0.0",
+  "description": "Ejemplos del curso TC2005B Construcción de software y toma de decisiones",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://karlapa06.github/karlao6/TC2005B)"
+  },
+  "keywords": [
+    "node",
+    "tec"
+  ],
+  "author": "Karla Padilla",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mysql2": "^3.2.0"
+  }
+}
