@@ -2,7 +2,9 @@
 
 <h1 class="tittle">Menú</h1>
 
-<a href="/crepas/nuevo" class="button is-link is-rounded ">Registrar</a>
+<% if(privilegios.indexOf('crear_crepas') >= 0) { %>
+    <a href="/crepas/nuevo" class="button is-link is-rounded">Registrar</a>
+<% } %>
 
 <br><br>
 
@@ -13,14 +15,14 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="<%= hot_cake.imagen %>" alt="Placeholder image">
+                            <img src="<%= crepa.imagen %>" alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="media">
                             <div class="media-left">
                             <figure class="image is-48x48">
-                                <img src="<%= hot_cake.imagen %>" alt="Placeholder image">
+                                <img src="<%= crepa.imagen %>" alt="Placeholder image">
                             </figure>
                             </div>
                             <div class="media-content">
@@ -47,9 +49,9 @@
 
 <br><br>
 
-<% if (ultimo_crepas != '') { %>
+<% if (ultima_crepas != '') { %>
     <div class="notification is-link is-light">
-        La ultima crepa registrada fue: <%= ultimo_crepas %>
+        La ultima crepa registrada fue: <%= ultima_crepas %>
     </div>
 <% } %>
 
