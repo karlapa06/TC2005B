@@ -55,6 +55,8 @@
     </div>
 <% } %>
 
-<a href="/crepas/nuevo" class="button is-link is-rounded">Registrar</a>
+<% if(privilegios.indexOf('crear_hotcakes') >= 0) { %>
+    <a href="/crepas/nuevo" class="button is-link is-rounded">Registrar</a>
+<% } %>
 
 <%- include('includes/foot.ejs') %>
