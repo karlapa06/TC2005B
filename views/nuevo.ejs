@@ -4,7 +4,9 @@
 
 <br><br>
 
-<form action="/crepas/nuevo" method="POST">
+<form action="/crepas/nuevo" method="POST" enctype="multipart/form-data"> <!--para archivos 
+    porque sino no funciona
+-->
     
     <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
 
@@ -22,7 +24,10 @@
 
     <label for="precio">Precio:</label>
     <input name="precio" id="precio" class="input is-rounded" type="number" value="75">
-
+    
+    <label for="imagen">Imagen</label>
+    <input name="imagen" id="imagen" class="input is-rounded" type="file">
+    
     <br><br>
 
     <input class="button is-info is-rounded" type="submit" value="Registrar">
